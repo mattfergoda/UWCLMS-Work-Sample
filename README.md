@@ -47,12 +47,12 @@ The assignment asked us to implement the following functions in `dictionary.c`: 
     Here is example output from running the above command:
     ```
     ...
-   eBooks								            eBooks
-   PG								                  PG
-   http								               http
-   tm								                  tm
-   eBooks								            eBooks
-   eBooks								            eBooks
+   eBooks                              eBooks
+   PG                            PG
+   http                             http
+   tm                            tm
+   eBooks                              eBooks
+   eBooks								      eBooks
 
    WORDS MISSPELLED:     17845					WORDS MISSPELLED:     17845
    WORDS IN DICTIONARY:  143091					WORDS IN DICTIONARY:  143091
@@ -62,4 +62,4 @@ The assignment asked us to implement the following functions in `dictionary.c`: 
    TIME IN size:         0.00				      <
    TIME IN unload:       0.02				      <
    TIME IN TOTAL:        0.79				      <
-```
+   ```
