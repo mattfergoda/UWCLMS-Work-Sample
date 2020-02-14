@@ -43,4 +43,24 @@ The assignment asked us to implement the following functions in `dictionary.c`: 
       ./speller texts/holmes.txt > output.txt
        diff -y output.txt keys/holmes.txt > diff.txt
     ```
-    The output file `diff.txt` will print the program’s output for `holmes.txt` and the corresponding key side by side with `<` characters indicating lines that differ. (Note that my program will have five lines of runtime information at the bottom of the output not included in the answer keys).
+    The output file `diff.txt` will print the program’s output for `holmes.txt` and the corresponding key side by side with `<` characters indicating lines that differ. Note that my program will have five lines of runtime information at the bottom of the output not included in the answer keys.  
+    Here is example output from running the above command:
+    
+    ```
+    ...
+    eBooks								eBooks
+PG								PG
+http								http
+tm								tm
+eBooks								eBooks
+eBooks								eBooks
+
+WORDS MISSPELLED:     17845					WORDS MISSPELLED:     17845
+WORDS IN DICTIONARY:  143091					WORDS IN DICTIONARY:  143091
+WORDS IN TEXT:        1150970					WORDS IN TEXT:        1150970
+TIME IN load:         0.04				      <
+TIME IN check:        0.74				      <
+TIME IN size:         0.00				      <
+TIME IN unload:       0.02				      <
+TIME IN TOTAL:        0.79				      <
+```
