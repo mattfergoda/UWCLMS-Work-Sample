@@ -6,7 +6,7 @@
 
 **Applicant**: Matt Fergoda  
 **Course**: Harvard’s CS50: Introduction to Computer Science via EdX  
-**Dates taken**: May - Sept. 2019  
+**Dates taken**: May - September 2019  
 [**Link to full assignment description**](https://docs.cs50.net/2019/x/psets/4/speller/hashtable/speller.html)  
 
 ### Description
