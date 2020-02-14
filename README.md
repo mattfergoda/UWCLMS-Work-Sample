@@ -9,6 +9,10 @@
 **Dates taken**: May - Sept. 2019  
 [**Link to full assignment description**](https://docs.cs50.net/2019/x/psets/4/speller/hashtable/speller.html)  
 
+### Description
+A simple spell checker. The program reads in a `txt.` file containing a list of correctly spelled words that acts as a dictionary. It reads in a separate `.txt` file and checks whether the words in the text appear in the dictionary and prints any "misspelled" words (i.e. words not in the dictionary) to the terminal.  
+
+`texts/` contains sample input texts, `dictionaries/` contains one "small" and one "large" dictionary, `output.txt` contains sample program output against the `holmes.txt` referencing the large dictionary, and `diff.txt` contains my program's output compared to the answer key's output. Answer keys for all texts referencing the large dictionary are contained in `keys/`.   
 ### Usage
 1. Make sure you open the program in an environment with a bash shell. Otherwise, the program will have trouble compiling during step 3. If you would like to execute the program and you have a PowerShell environment, the easiest workaround is to access the project in CS50’s proprietary IDE. To do so, please email me your GitHub username requesting access (unfortunately there's no option to make it public). Once I've granted you access, you can go to [this link](https://ide.cs50.io/mattfergoda/ide).
 
