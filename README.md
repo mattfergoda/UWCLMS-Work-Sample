@@ -10,7 +10,7 @@
 [**Link to full assignment description**](https://docs.cs50.net/2019/x/psets/4/speller/hashtable/speller.html)  
 
 ### Usage
-1. Make sure you open the program in an environment with a bash shell. Otherwise, the program will have trouble compiling during step 3. If you would like to execute the program and you have a PowerShell environment, the easiest workaround is to access the project in CS50’s proprietary IDE. To do so, please email me your GitHub username requesting access. Once I've granted you access, you can go to [this link](https://ide.cs50.io/mattfergoda/ide).
+1. Make sure you open the program in an environment with a bash shell. Otherwise, the program will have trouble compiling during step 3. If you would like to execute the program and you have a PowerShell environment, the easiest workaround is to access the project in CS50’s proprietary IDE. To do so, please email me your GitHub username requesting access (unfortunately there's no option to make it public). Once I've granted you access, you can go to [this link](https://ide.cs50.io/mattfergoda/ide).
 
 2. Navigate into the directory `UW_CLMS_Work_Sample`.
 
