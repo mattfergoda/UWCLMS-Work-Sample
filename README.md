@@ -9,23 +9,24 @@
 **Dates taken**: May - Sept. 2019  
 [**Link to full assignment description**](https://docs.cs50.net/2019/x/psets/4/speller/hashtable/speller.html)  
 
-1. To access the project in CS50’s proprietary IDE, go to [this link](https://ide.cs50.io/mattfergoda/ide) (this is likely the simplest way to run the program).
+### Usage
+1. Make sure you open the program in an environment with a bash shell. Otherwise, the program will have trouble compiling during step 3. If you would like to execute the program and you have a PowerShell environment, the easiest workaround is to access the project in CS50’s proprietary IDE. To do so, please email me your GitHub username requesting access. Once I've granted you access, you can go to [this link](https://ide.cs50.io/mattfergoda/ide).
 
-2. Using the IDE’s terminal command line, `cd` into the folder `UW_CLMS_Work_Sample`.
+2. Navigate into the directory `UW_CLMS_Work_Sample`.
 
 3. To have `clang` compile the program according to the `Makefile`’s specifications, run `make speller`.
 
 4. The program’s usage is `./speller [dictionary] text`
-    * There are two dictionaries available with which to run the program: one “small” (with just two) and one “large” (with several thousand words), both of which can be found in the `dictionaries/`.
+    * There are two dictionaries available with which to run the program: one “small” (with just two words) and one “large” (with several thousand words), both of which can be found in `dictionaries/`.
     * If the argument is omitted, the program will default to the large dictionary.
     * There are a variety of texts with which to run the program, found in the `texts/`.
     * Answer keys demonstrating the correct program output using the large dictionary can be found in the `keys/`.
-    * For example, the command
-        ```./speller dictionaries/small texts/carroll.txt```
-    will run the program on carroll.txt referencing the small dictionary while
-        ```./speller dictionaries/large texts/holmes.txt```
-    or simply
-        ```./speller texts/holmes.txt```
+    * For example, the command  
+        ```./speller dictionaries/small texts/carroll.txt```  
+    will run the program on carroll.txt referencing the small dictionary while  
+        ```./speller dictionaries/large texts/holmes.txt```  
+    or simply  
+        ```./speller texts/holmes.txt```  
     will run the program on holmes.txt referencing the large dictionary.
     * I suggest using
    ``` ./speller [dictionary] text > output.txt```
