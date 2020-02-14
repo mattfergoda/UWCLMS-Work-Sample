@@ -47,12 +47,13 @@ The assignment asked us to implement the following functions in `dictionary.c`: 
     Here is example output from running the above command:
     ```
     ...
-   eBooks                              eBooks
-   PG                            PG
-   http                             http
-   tm                            tm
-   eBooks                              eBooks
-   eBooks								      eBooks
+    
+   eBooks								eBooks
+   PG								PG
+   http								http
+   tm								tm
+   eBooks								eBooks
+   eBooks								eBooks
 
    WORDS MISSPELLED:     17845					WORDS MISSPELLED:     17845
    WORDS IN DICTIONARY:  143091					WORDS IN DICTIONARY:  143091
