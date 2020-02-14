@@ -4,10 +4,10 @@
 ### Coding project submitted as a work sample for admission to UW CLMS in March 2020.
 
 
-**Applicant**: Matt Fergoda
-**Course**: Harvard’s CS50: Introduction to Computer Science via EdX
-**Dates taken**: May - Sept. 2019
-[**Link to full assignment description**](https://docs.cs50.net/2019/x/psets/4/speller/hashtable/speller.html)
+**Applicant**: Matt Fergoda  
+**Course**: Harvard’s CS50: Introduction to Computer Science via EdX  
+**Dates taken**: May - Sept. 2019  
+[**Link to full assignment description**](https://docs.cs50.net/2019/x/psets/4/speller/hashtable/speller.html)  
 
 1. To access the project in CS50’s proprietary IDE, go to [this link](https://ide.cs50.io/mattfergoda/ide) (this is likely the simplest way to run the program).
 
