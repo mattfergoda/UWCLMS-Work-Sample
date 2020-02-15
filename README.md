@@ -39,8 +39,28 @@ The assignment asked us to implement `dictionary.c` (containing the functions `h
     will run the program on holmes.txt referencing the large dictionary.
     * I suggest using
    ``` ./speller [dictionary] text > output.txt```
-    to print the output to a `.txt` file instead of the terminal, making it easier to compare the output to the key and keeping the terminal free of output.
+    to print the output to a `.txt` file instead of the terminal, making it easier to compare the output to the key and keeping the terminal free of output.  
+    
+    Here is example program output from running `./speller texts/holmes.txt`:
+```
+...
 
+eBooks
+PG
+http
+tm
+eBooks
+eBooks
+
+WORDS MISSPELLED:     17845
+WORDS IN DICTIONARY:  143091
+WORDS IN TEXT:        1150970
+TIME IN load:         0.04
+TIME IN check:        0.75
+TIME IN size:         0.00
+TIME IN unload:       0.01
+TIME IN TOTAL:        0.81
+```
 5. To compare the output of my program to an answer key one can run, for example:
    ```
       ./speller texts/holmes.txt > output.txt
