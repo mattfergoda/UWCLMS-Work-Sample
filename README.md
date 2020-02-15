@@ -34,7 +34,7 @@ The assignment asked us to implement `dictionary.c` (containing the functions `h
     * There are a variety of texts with which to run the program, found in `texts/`.
     * Answer keys demonstrating the correct program output using the large dictionary can be found in `keys/`.
     * For example, the command  
-        ->```./speller dictionaries/small texts/carroll.txt```<-  
+        <p style="text-align: center">```./speller dictionaries/small texts/carroll.txt```</p>  
     will run the program on carroll.txt referencing the small dictionary while  
         ->```./speller dictionaries/large texts/holmes.txt```<-  
     or simply  
