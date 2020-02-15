@@ -21,17 +21,17 @@ by Matt Fergoda
 #include "dictionary.h"
 
 /*
- Represents number of bins in the hash table for hash function
- below, based on a polynomial rolling hash as described here:
- https://cp-algorithms.com/string/string-hashing.html (last retrieved 2/12/20)
- Source suggests a large prime number for number of bins.
- This one is from Pietro Cataldi (https://en.wikipedia.org/wiki/Largest_known_prime_number)
- This number of bins gives a load factor (# entries / # of bins) that is
- less than 1 (143091 / 524287 = 0.27), which helps ensure the
- constant time property of the hash table. Though the load factor
- here is a bit low, indicating wasted memory,the next smallest prime number (131,071)
- would yeild a load factor greater than 1.
- In the interest of prioritizing speed over memory usage, I chose 524,287.
+Represents number of bins in the hash table for hash function
+below, based on a polynomial rolling hash as described here:
+https://cp-algorithms.com/string/string-hashing.html (last retrieved 2/12/20)
+Source suggests a large prime number for number of bins.
+This one is from Pietro Cataldi (https://en.wikipedia.org/wiki/Largest_known_prime_number)
+This number of bins gives a load factor (# entries / # of bins) that is
+less than 1 (143091 / 524287 = 0.27), which helps ensure the
+constant time property of the hash table. Though the load factor
+here is a bit low, indicating wasted memory,the next smallest prime number (131,071)
+would yeild a load factor greater than 1.
+In the interest of prioritizing speed over memory usage, I chose 524,287.
 */
 const int HBINS = 524287;
 
