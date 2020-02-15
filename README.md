@@ -12,9 +12,9 @@
 ### Description
 A simple spell checker. The program reads in a `.txt` file containing a list of correctly spelled words that acts as a dictionary. Each word is hashed and stored in a hash table. The program then reads in a separate `.txt` file and checks whether each word in the text appears in the dictionary, printing any "misspelled" words (i.e. words not in the dictionary) to the terminal.  
 
-The assignment asked us to implement `dictionary.c` (containing the functions `hash`, `load`, `check`, `size`, and `unload`).  
+The assignment asked us to implement `dictionary.c`, which contains the functions `hash`, `load`, `check`, `size`, and `unload`.  
 
-`speller.c`, `speller.o`, `dictionary.h`, `dictionary.o`, and the `Makefile` were all included in the assignment’s distribution code.  
+`speller.c`, `speller.o`, `dictionary.h`, `dictionary.o`, and the `Makefile` were all included in the assignment’s distribution code and do not reflect my original work.  
 
 * `texts/` contains sample input texts.  
 * `dictionaries/` contains one "small" (two-word) and one "large" (several-thousand-word) dictionary.  
