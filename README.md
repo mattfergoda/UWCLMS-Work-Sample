@@ -28,7 +28,7 @@ The assignment asked us to implement `dictionary.c` (containing the functions `h
 
 3. To have `clang` compile the program according to the `Makefile`’s specifications, run `make speller`.
 
-4. The program’s usage is `./speller [dictionary] text`
+4. The program’s usage is `./speller [dictionary] text`.
     * There are two dictionaries available with which to run the program: one “small” (with just two words) and one “large” (with several thousand words), both of which can be found in `dictionaries/`.
     * If the argument is omitted, the program will default to the large dictionary.
     * There are a variety of texts with which to run the program, found in the `texts/`.
