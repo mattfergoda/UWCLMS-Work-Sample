@@ -37,7 +37,7 @@ The assignment asked us to implement `dictionary.c`, which contains the function
     will both run the program on `holmes.txt` referencing the large dictionary.
     * I suggest using
    ``` ./speller [dictionary] text > output.txt```
-    to print the output to a `.txt` file instead of the terminal. The program will run quicker, it will make it easier to compare the output to the key, and it will keep the terminal free of output.  
+    to print the output to a `.txt` file instead of the terminal. It will make it easier to compare the output to the key, keep the terminal free of output, and the program will finish running more quickly.  
     
     Here are the last few lines of output from running `./speller texts/holmes.txt`:
    ```
