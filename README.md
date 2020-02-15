@@ -12,9 +12,15 @@
 ### Description
 A simple spell checker. The program reads in a `.txt` file containing a list of correctly spelled words that acts as a dictionary. Each word is hashed and stored in a hash table. The program then reads in a separate `.txt` file and checks whether each word in the text appears in the dictionary, printing any "misspelled" words (i.e. words not in the dictionary) to the terminal.  
 
-The assignment asked us to implement the following functions in `dictionary.c`: `hash`, `load`, `check`, `size`, and `unload`. The code in `speller.c`, `speller.o`, `dictionary.h`, `dictionary.o`, and the `Makefile` were all included as part of the assignment’s distribution.  
+The assignment asked us to implement `dictionary.c` (containing the functions `hash`, `load`, `check`, `size`, and `unload`).  
 
-`texts/` contains sample input texts, `dictionaries/` contains one "small" and one "large" dictionary, `output.txt` contains sample program output against the `holmes.txt` referencing the large dictionary, and `diff.txt` contains my program's output compared to the answer key's. Answer keys for all texts referencing the large dictionary are contained in `keys/`.   
+`speller.c`, `speller.o`, `dictionary.h`, `dictionary.o`, and the `Makefile` were all included as part of the assignment’s distribution code.  
+
+`texts/` contains sample input texts.  
+`dictionaries/` contains one "small" and one "large" dictionary.  
+`output.txt` contains sample program output against the `holmes.txt` referencing the large dictionary.   
+`diff.txt` contains my program's output compared to the answer key's.  
+Answer keys for all texts referencing the large dictionary are contained in `keys/`.   
 ### Usage
 1. Make sure you open the program in an environment with a bash shell. Otherwise, `clang` will have trouble compiling during step 3. If you would like to execute the program and you have a PowerShell environment, the easiest workaround is to access the project in CS50’s proprietary IDE. To do so, please email me your GitHub username requesting access (unfortunately there's no option to make it public). Once I've granted you access, you can go to [this link](https://ide.cs50.io/mattfergoda/ide).
 
