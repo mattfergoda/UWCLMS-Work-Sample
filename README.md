@@ -34,24 +34,24 @@ The assignment asked us to implement `dictionary.c` (containing the functions `h
     * There are a variety of texts with which to run the program, found in `texts/`.
     * Answer keys demonstrating the correct program output using the large dictionary can be found in `keys/`.
     * For example, the command  
-        '''<p style="text-align: center">./speller dictionaries/small texts/carroll.txt</p>```   
+        '''./speller dictionaries/small texts/carroll.txt```   
     will run the program on carroll.txt referencing the small dictionary while  
-        ->```./speller dictionaries/large texts/holmes.txt```<-  
+        ```./speller dictionaries/large texts/holmes.txt```  
     or simply  
-        ->```./speller texts/holmes.txt```<-  
+        ```./speller texts/holmes.txt```  
     will run the program on holmes.txt referencing the large dictionary.
     * I suggest using
-   ->``` ./speller [dictionary] text > output.txt```<-
+   ``` ./speller [dictionary] text > output.txt```
     to print the output to a `.txt` file instead of the terminal, making it easier to compare the output to the key and keeping the terminal free of output.
 
 5. To compare the output of my program to an answer key one can run, for example:
-  -> ```
+   ```
       ./speller texts/holmes.txt > output.txt
        diff -y output.txt keys/holmes.txt > diff.txt
-    ```<-
+    ```
     The output file `diff.txt` will print the program’s output for `holmes.txt` and the corresponding key side by side with `<` characters indicating lines that differ. Note that my program will have five lines of runtime information at the bottom of the output not included in the answer keys.  
     Here is example output from running the above command:
-    ->```
+    ```
     ...
     
    eBooks								eBooks
@@ -69,4 +69,4 @@ The assignment asked us to implement `dictionary.c` (containing the functions `h
    TIME IN size:         0.00				      <
    TIME IN unload:       0.02				      <
    TIME IN TOTAL:        0.79				      <
-   ```<-
+   ```
