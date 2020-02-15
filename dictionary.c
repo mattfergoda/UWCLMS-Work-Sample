@@ -40,9 +40,14 @@ bool loaded = false; // Will keep track of whether a dictionary has been loaded.
 unsigned int words = 0; // Will count the number of words in the dictionary, used in size() function.
 
 /*
-A node in a linked list, containing a string representing a word in the dictionary
-and a pointer to the next word in the dictionary. Will use this to form linked lists 
-in the hash table.
+struct: node
+-----------------------
+A node in a linked list. 
+Will be used to construct the hash table's linked lists.
+
+word: A word in the dictionary.
+
+next: A pointer to the next word in the linked list.
 */
 typedef struct node
 {
