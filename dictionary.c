@@ -25,14 +25,17 @@
 const int HBINS = 524287;
 
 
-// Initialize a bool to store whether a dictionary has been loaded
+// Will keep track of whether a dictionary has been loaded
 bool loaded = false;
 
-// Initialize an int to to count the number of words in the dictionary,
-// used in size() function.
+// Will count the number of words in the dictionary, used in size() function.
 unsigned int words = 0;
 
-// Represents a node in a hash table
+/*
+A node in a linked list, containing a string representing a word
+and a pointer to the next word in the linked list. We will use
+an array of linked lists to make the hash table.
+*/
 typedef struct node
 {
     char word[LENGTH + 1];
@@ -40,17 +43,16 @@ typedef struct node
 }
 node;
 
-// Instantiate the hash table as an array of nodes
 node *hashtable[HBINS] = { NULL };
 
+/* 
+A polynomial rolling hash function, as described:
+https://cp-algorithms.com/string/string-hashing.html (last retrieved 2/12/20)
 
-// A polynomial rolling hash function, as described:
-// https://cp-algorithms.com/string/string-hashing.html
-//
-// I found this generally performs check() in about 0.75s on holmes.txt
-// whereas a simple hash summing the ascii values of a word
-// performs check() in about 3s on holmes.txt.
-
+I found this generally performs check() in about 0.75s on holmes.txt
+whereas a simple hash summing the ascii values of a word
+performs check() in about 3s on holmes.txt.
+*/
 unsigned int hash(const char *word)
 {
     unsigned int hash = 0;
