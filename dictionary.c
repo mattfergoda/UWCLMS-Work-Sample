@@ -33,7 +33,7 @@ Functions are used in speller.c
 */
 const int HBINS = 524287;
 
-bool loaded = false; // Will keep track of whether a dictionary has been loaded
+bool loaded = false; // Will keep track of whether a dictionary has been loaded.
 
 unsigned int words = 0; // Will count the number of words in the dictionary, used in size() function.
 
@@ -86,7 +86,7 @@ Returns: Bool indicating whether or not the dictionary was loaded successfully.
 */
 bool load(const char *dictionary)
 {
-    // Open dictionary, check that it opens correctly otherwise return false
+    // Open dictionary, check that it opens correctly otherwise return false.
     FILE *file = fopen(dictionary, "r");
     if (file == NULL)
     {
@@ -94,9 +94,9 @@ bool load(const char *dictionary)
         return false;
     }
  
-    char word[LENGTH + 1];  // Buffer for a word
+    char word[LENGTH + 1];  // Buffer for a word.
 
-    // Insert words into hash table
+    // Insert words into hash table.
     while (fscanf(file, "%s", word) != EOF)
     {
         node *new_node = malloc(sizeof(node));
@@ -111,12 +111,10 @@ bool load(const char *dictionary)
         else
         {
             memset(new_node, 0, sizeof(node)); // Initialize the temporary node.
-
             strcpy(new_node -> word, word); // Copy the word into the word attribute of the new node.
-
             unsigned int hashcode = hash(new_node -> word); // Hash the new word.
 
-            // Insert the new word into the hash table
+            // Insert the new word into the hash table.
             new_node -> next = hashtable[hashcode];
             hashtable[hashcode] = new_node;
          
@@ -126,7 +124,7 @@ bool load(const char *dictionary)
 
     fclose(file);
 
-    loaded = true; // Load successful. Change loaded to true
+    loaded = true; // Load successful. Change loaded to true.
     return true;
 }
 
@@ -158,8 +156,8 @@ Returns: True if word is in dictionary, false otherwise.
 */
 bool check(const char *word)
 {
-    unsigned int hashword = hash(word); // Hash the word we're checking for
-    node *cursor = hashtable[hashword]; // Start the cursor at the corresponding place in the hash table
+    unsigned int hashword = hash(word); // Hash the word we're checking for.
+    node *cursor = hashtable[hashword]; // Start the cursor at the corresponding place in the hash table.
     while (cursor != NULL)
     {
         if (strcasecmp(cursor -> word, word) == 0)
