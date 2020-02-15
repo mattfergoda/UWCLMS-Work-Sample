@@ -1,10 +1,10 @@
 /* 
 Implements a dictionary's functionality. In particular, the functions:
 hash: Hashes a word.
-load: Loads a dictionary .txt file into memory.
+load: Loads a dictionary .txt file into memory as a hash table.
 size: Returns the number of words in the dictionary.
-check: Checks if a given word is in the dictionary.
-unload: Frees the dictionary from memory.
+check: Checks if a given word is in the dictionary hash table.
+unload: Frees the dictionary hash table from memory.
 
 Functions are used in speller.c
 */
@@ -38,9 +38,9 @@ bool loaded = false; // Will keep track of whether a dictionary has been loaded.
 unsigned int words = 0; // Will count the number of words in the dictionary, used in size() function.
 
 /*
-A node in a linked list, containing a string representing a word
-and a pointer to the next word in the linked list. We will use
-an array of linked lists to make the hash table.
+A node in a linked list, containing a string representing a word in the dictionary
+and a pointer to the next word in the dictionary. Will use this to form linked lists 
+in the hash table.
 */
 typedef struct node
 {
@@ -49,7 +49,7 @@ typedef struct node
 }
 node;
 
-node *hashtable[HBINS] = { NULL };
+node *hashtable[HBINS] = { NULL }; // Will store the dictionary
 
 /* 
 Function: hash
@@ -64,7 +64,7 @@ Returns: An integer hash code. The same word will always return the same hash co
 unsigned int hash(const char *word)
 {
     unsigned int hash = 0;
-    unsigned int p = 31; // Prime number generally ideal for English alphabet in one case (upper or lower), according to above source.
+    unsigned int p = 31; // Prime number generally ideal for English alphabet in consistent case, according to above source.
     unsigned int p_power = 1; // Powers are hard in C. This will simplify it.
     for (int i = 0; i < strlen(word) - 1; i++)
     {
