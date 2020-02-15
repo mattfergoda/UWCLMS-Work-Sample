@@ -18,7 +18,7 @@ The assignment asked us to implement `dictionary.c` (containing the functions `h
 
 * `texts/` contains sample input texts.  
 * `dictionaries/` contains one "small" (two-word) and one "large" (several-thousand-word) dictionary.  
-* `output.txt` contains sample program output against the `holmes.txt` referencing the large dictionary.   
+* `output.txt` contains sample program output spell-checking the `holmes.txt` against the large dictionary.   
 * `diff.txt` contains my program's output compared to the answer key's.  
 * `keys/` contains answer keys for all texts referencing the large dictionary.   
 ### Usage
@@ -30,18 +30,16 @@ The assignment asked us to implement `dictionary.c` (containing the functions `h
 
 4. The program’s usage is `./speller [dictionary] text`.
     * If the argument is omitted, the program will default to the large dictionary.
-    * For example, the command  
-        ```./speller dictionaries/small texts/carroll.txt```   
-    will run the program on carroll.txt referencing the small dictionary while  
+    * For example, the command   
         ```./speller dictionaries/large texts/holmes.txt```  
     or simply  
         ```./speller texts/holmes.txt```  
-    will run the program on holmes.txt referencing the large dictionary.
+    will both run the program on `holmes.txt` referencing the large dictionary.
     * I suggest using
    ``` ./speller [dictionary] text > output.txt```
-    to print the output to a `.txt` file instead of the terminal, making it easier to compare the output to the key and keeping the terminal free of output.  
+    to print the output to a `.txt` file instead of the terminal. The program will run quicker, it will make it easier to compare the output to the key, and it will keep the terminal free of output.  
     
-    Here is example program output from running `./speller texts/holmes.txt`:
+    Here are the last few lines of output from running `./speller texts/holmes.txt`:
    ```
    ...
 
@@ -67,7 +65,7 @@ The assignment asked us to implement `dictionary.c` (containing the functions `h
        diff -y output.txt keys/holmes.txt > diff.txt
     ```
     The output file `diff.txt` will print the program’s output for `holmes.txt` and the corresponding key side by side with `<` characters indicating lines that differ. Note that my program will have five lines of runtime information at the bottom of the output not included in the answer keys.  
-    Here is example output from running the above command:
+    Here are the last few lines of output from running the above command:
     ```
     ...
     
