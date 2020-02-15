@@ -14,7 +14,7 @@ A simple spell checker. The program reads in a `.txt` file containing a list of 
 
 The assignment asked us to implement `dictionary.c` (containing the functions `hash`, `load`, `check`, `size`, and `unload`).  
 
-`speller.c`, `speller.o`, `dictionary.h`, `dictionary.o`, and the `Makefile` were all included as part of the assignment’s distribution code.  
+`speller.c`, `speller.o`, `dictionary.h`, `dictionary.o`, and the `Makefile` were all included in the assignment’s distribution code.  
 
 * `texts/` contains sample input texts.  
 * `dictionaries/` contains one "small" (two-word) and one "large" (several-thousand-word) dictionary.  
