@@ -1,4 +1,13 @@
-// Implements a dictionary's functionality
+/* 
+Implements a dictionary's functionality. In particular, the functions:
+hash: Hashes a word.
+load: Loads a dictionary .txt file into memory.
+size: Returns the number of words in the dictionary.
+check: Checks if a given word is in the dictionary.
+unload: Frees the dictionary from memory.
+
+Functions are used in speller.c
+*/
 
 #include <ctype.h>
 #include <stdbool.h>
@@ -24,12 +33,9 @@
 */
 const int HBINS = 524287;
 
+bool loaded = false; // Will keep track of whether a dictionary has been loaded
 
-// Will keep track of whether a dictionary has been loaded
-bool loaded = false;
-
-// Will count the number of words in the dictionary, used in size() function.
-unsigned int words = 0;
+unsigned int words = 0; // Will count the number of words in the dictionary, used in size() function.
 
 /*
 A node in a linked list, containing a string representing a word
@@ -46,12 +52,14 @@ node;
 node *hashtable[HBINS] = { NULL };
 
 /* 
+Function: hash
+--------------
 A polynomial rolling hash function, as described:
 https://cp-algorithms.com/string/string-hashing.html (last retrieved 2/12/20)
 
-I found this generally performs check() in about 0.75s on holmes.txt
-whereas a simple hash summing the ascii values of a word
-performs check() in about 3s on holmes.txt.
+word: The word we want to hash.
+
+Returns: An integer hash code. The same word will always return the same hash code.
 */
 unsigned int hash(const char *word)
 {
@@ -67,7 +75,15 @@ unsigned int hash(const char *word)
     return hash;
 }
 
-// Loads dictionary into memory, returning true if successful else false
+/* 
+Function: load
+--------------
+Loads dictionary (list of correctly spelled words in .txt format) into memory.
+
+dictionary: String containing the dictionary .txt file name.
+
+Returns: Bool indicating whether or not the dictionary was loaded successfully.
+*/
 bool load(const char *dictionary)
 {
     // Open dictionary, check that it opens correctly otherwise return false
@@ -77,9 +93,8 @@ bool load(const char *dictionary)
         unload();
         return false;
     }
-
-    // Buffer for a word
-    char word[LENGTH + 1];
+ 
+    char word[LENGTH + 1];  // Buffer for a word
 
     // Insert words into hash table
     while (fscanf(file, "%s", word) != EOF)
@@ -95,35 +110,31 @@ bool load(const char *dictionary)
 
         else
         {
-            // initialize the temporary node
-            memset(new_node, 0, sizeof(node));
+            memset(new_node, 0, sizeof(node)); // Initialize the temporary node.
 
-            // Copy the word into the word attribute of the new node.
-            strcpy(new_node -> word, word);
+            strcpy(new_node -> word, word); // Copy the word into the word attribute of the new node.
 
-            // Hash the new word.
-            unsigned int hashcode = hash(new_node -> word);
+            unsigned int hashcode = hash(new_node -> word); // Hash the new word.
 
             // Insert the new word into the hash table
             new_node -> next = hashtable[hashcode];
             hashtable[hashcode] = new_node;
-
-            // Increment words so we know the number of words
-            // in the dictionary for the size() function
-            words++;
+         
+            words++; // Increment words for size()
         }
     }
 
-    // Close dictionary
     fclose(file);
 
-    // Load successful. Change loaded to true and
-    // return true
-    loaded = true;
+    loaded = true; // Load successful. Change loaded to true
     return true;
 }
 
-// Returns number of words in dictionary if loaded, else 0 if not yet loaded
+/* 
+Function: size
+--------------
+Returns: Number of words in dictionary if loaded, otherwise 0 if not yet loaded.
+*/
 unsigned int size(void)
 {
     if (loaded)
@@ -136,7 +147,15 @@ unsigned int size(void)
     }
 }
 
-// Returns true if word is in dictionary else false
+/* 
+Function: check
+--------------
+Checks whether a word is in the dictionary hash table.
+
+word: The word we want to find in the dictionary.
+
+Returns: True if word is in dictionary, false otherwise.
+*/
 bool check(const char *word)
 {
     unsigned int hashword = hash(word); // Hash the word we're checking for
@@ -155,7 +174,13 @@ bool check(const char *word)
     return false;
 }
 
-// Unloads dictionary from memory, returning true if successful else false
+/* 
+Function: unload
+--------------
+Unloads dictionary hash table from memory.
+
+Returns: True if memory is successfully freed, false otherwise.
+*/
 bool unload(void)
 {
     for (int i = 0; i < HBINS; i++)
