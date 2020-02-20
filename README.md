@@ -17,7 +17,7 @@ The assignment asked us to implement `dictionary.c`, which contains the function
 `speller.c`, `speller.o`, `dictionary.h`, `dictionary.o`, and the `Makefile` were all included in the assignment’s distribution code and do not reflect my original work.  
 
 * `texts/` contains sample input texts.  
-* `dictionaries/` contains one "small" (two-word) and one "large" (several-thousand-word) dictionary.  
+* `dictionaries/` contains one "small" (two-word) and one "large" (143,091-word) dictionary.  
 * `output.txt` contains sample program output spell-checking the `holmes.txt` against the large dictionary.   
 * `diff.txt` contains my program's output compared to the answer key's.  
 * `keys/` contains answer keys for all texts referencing the large dictionary.   
