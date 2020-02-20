@@ -30,7 +30,7 @@ The assignment asked us to implement `dictionary.c`, which contains the function
 
 4. The program’s usage is `./speller [dictionary] text`.
     * If the argument is omitted, the program will default to the large dictionary.
-    * For example, the command   
+    * For example, the commands   
         ```./speller dictionaries/large texts/holmes.txt```  
     or simply  
         ```./speller texts/holmes.txt```  
