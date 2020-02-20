@@ -1,7 +1,7 @@
 
 # UW CLMS Application Work Sample
 ## Matt Fergoda
-### A coding project submitted as a work sample for admission to UW CLMS in March 2020.
+### A coding project submitted as my work sample for admission to UW CLMS in March 2020.
 
 
 **Applicant**: Matt Fergoda  
