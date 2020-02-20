@@ -3,8 +3,8 @@ Implements a dictionary's functionality. In particular, the functions:
 hash: Hashes a word.
 load: Loads a dictionary .txt file into memory as a hash table.
 size: Returns the number of words in the dictionary.
-check: Checks if a given word is in the dictionary hash table.
-unload: Frees the dictionary hash table from memory.
+check: Checks if a given word is in the dictionary hash table (array of linked lists).
+unload: Frees the dictionary hash table from memory. I ran valgrind to confirm no memory leaks.
 
 Functions are used in speller.c
 
@@ -31,7 +31,7 @@ less than 1 (143091 / 524287 = 0.27), which helps ensure the
 constant time property of the hash table. Though the load factor
 here is a bit low, indicating wasted memory,the next smallest prime number (131,071)
 would yeild a load factor greater than 1.
-In the interest of prioritizing speed over memory usage, I chose 524,287.
+In the interest of prioritizing speed over memory, I chose 524,287.
 */
 const int HBINS = 524287;
 
@@ -184,7 +184,7 @@ Function: unload
 --------------
 Unloads dictionary hash table from memory.
 
-Returns: True if memory is successfully freed, false otherwise.
+Returns: True if memory is successfully freed.
 */
 bool unload(void)
 {
