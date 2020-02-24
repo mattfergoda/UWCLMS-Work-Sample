@@ -1,10 +1,7 @@
 
 # UW CLMS Application Work Sample
 ## Matt Fergoda 
-UW Computational Linguistics Master of Science, Fall 2020 
-### A coding project submitted as my work sample for admission to UW CLMS.
-
-**Applicant**: Matt Fergoda  
+ 
 **Program**: UW Computational Linguistics Master of Science, Fall 2020  
 
 **Assignment Course**: Harvard’s CS50: Introduction to Computer Science via EdX  
