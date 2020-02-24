@@ -4,11 +4,14 @@
  
 **Program**: UW Computational Linguistics Master of Science, Fall 2020  
 
+
+
+### Description
+
 **Assignment Course**: Harvard’s CS50: Introduction to Computer Science via EdX  
 **Dates taken**: May - September 2019  
 [**Link to full assignment description**](https://docs.cs50.net/2019/x/psets/4/speller/hashtable/speller.html)  
 
-### Description
 A simple spell checker. The program reads in a `.txt` file containing a list of correctly spelled words that acts as a dictionary. Each word is hashed and stored in a hash table. The program then reads in a separate `.txt` file and checks whether each word in the text appears in the dictionary, printing any "misspelled" words (i.e. words not in the dictionary) to the terminal.  
 
 The assignment asked us to implement `dictionary.c`, which contains the functions `hash`, `load`, `check`, `size`, and `unload`. **For a more detailed discussion of my implementation and methodology, please refer to** ``Write-up.pdf``**.**   
