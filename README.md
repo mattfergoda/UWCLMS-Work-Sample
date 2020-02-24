@@ -70,7 +70,7 @@ The assignment asked us to implement `dictionary.c`, which contains the function
       ./speller texts/holmes.txt > output.txt
        diff -y output.txt keys/holmes.txt > diff.txt
     ```
-    The output file `diff.txt` will print the program’s output for `holmes.txt` and the corresponding key side by side with `<` characters indicating lines that differ. Note that my program will have five lines of runtime information at the bottom of the output not included in the answer keys.  
+    The output file `diff.txt` will print the program’s output for `holmes.txt` and the corresponding key side by side with `<` characters indicating lines that differ. Note that my program will have five lines of runtime information at the bottom of the output that are not included in the answer keys.  
     Here are the last few lines of output from running the above command:
     ```
    MISSPELLED WORDS						MISSPELLED WORDS
