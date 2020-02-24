@@ -69,7 +69,7 @@ The assignment asked us to implement `dictionary.c`, which contains the function
     Here are the last few lines of output from running the above command:
     ```
    MISSPELLED WORDS						MISSPELLED WORDS
-   ...						                    ...
+   ...						                  ...
    
    eBooks								eBooks
    PG								PG
