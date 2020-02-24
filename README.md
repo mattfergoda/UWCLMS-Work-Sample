@@ -42,6 +42,7 @@ The assignment asked us to implement `dictionary.c`, which contains the function
     Here are the last few lines of output from running `./speller texts/holmes.txt`:
    ```
    MISSPELLED WORDS
+   
    ...
 
    eBooks
