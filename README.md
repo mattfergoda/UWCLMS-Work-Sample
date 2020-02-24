@@ -68,8 +68,8 @@ The assignment asked us to implement `dictionary.c`, which contains the function
     The output file `diff.txt` will print the program’s output for `holmes.txt` and the corresponding key side by side with `<` characters indicating lines that differ. Note that my program will have five lines of runtime information at the bottom of the output not included in the answer keys.  
     Here are the last few lines of output from running the above command:
     ```
-    ...
    MISSPELLED WORDS						MISSPELLED WORDS
+   ...
    eBooks								eBooks
    PG								PG
    http								http
