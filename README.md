@@ -1,4 +1,3 @@
-
 # UW CLMS Application Work Sample
 ## Matt Fergoda 
  
