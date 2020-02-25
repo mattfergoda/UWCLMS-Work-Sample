@@ -26,7 +26,7 @@ The assignment asked us to implement `dictionary.c`, which contains the function
 * `diff.txt` contains my program's output compared to the answer key's.  
 * `keys/` contains answer keys for all texts referencing the large dictionary.   
 ### Usage
-1. **Make sure you open the program in an environment with a bash shell**. Otherwise, `clang` will have trouble compiling during step 3. **If you would like to execute the program but don't have access to a bash shell environment,** the easiest workaround is to access the project in CS50’s proprietary in-browser IDE. To do so, please email me your GitHub username requesting access (unfortunately there's no option to make it public). Once I've granted you access, you can go to [this link](https://ide.cs50.io/mattfergoda/ide).
+1. **Make sure you open the program in an environment with a bash shell**. Otherwise, `clang` will have trouble compiling during step 3. **If you would like to execute the program but don't have access to a bash shell environment,** the easiest workaround is to access the project in CS50’s proprietary in-browser IDE. To do so, please email me your GitHub username and I will grant you access as soon as possible (unfortunately there's no option to make it public). Once I've granted you access, you can go to [this link](https://ide.cs50.io/mattfergoda/ide).
 
 2. Navigate into the directory `UW_CLMS_Work_Sample`.
 
