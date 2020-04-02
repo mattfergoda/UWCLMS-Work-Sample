@@ -1,11 +1,4 @@
-# UW CLMS Application Work Sample
-## Matt Fergoda 
- 
-**Program**: UW Computational Linguistics Master of Science, Fall 2020  
-
-
-
-### Description
+ ### Description
 
 **Assignment Course**: Harvard’s CS50: Introduction to Computer Science via EdX  
 **Dates taken**: May - September 2019  
