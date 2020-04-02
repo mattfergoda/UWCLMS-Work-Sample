@@ -7,8 +7,6 @@ check: Checks if a given word is in the dictionary hash table (array of linked l
 unload: Frees the dictionary hash table from memory. I ran valgrind to confirm no memory leaks.
 
 Functions are used in speller.c
-
-by Matt Fergoda
 */
 
 #include <ctype.h>
